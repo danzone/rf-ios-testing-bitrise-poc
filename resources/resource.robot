@@ -27,7 +27,7 @@ Stop Appium Server
     Terminate Process  appiumserver  kill=True
 
 Open iOS Test App
-#  Start Appium Server
+  Start Appium Server
   open application  http://127.0.0.1:4723/wd/hub  automationName=${IOS_AUTOMATION_NAME}
   ...  app=${IOS_APP}  platformName=${IOS_PLATFORM_NAME}  platformVersion=${IOS_PLATFORM_VERSION}
   ...  deviceName=${IOS_DEVICE_NAME}

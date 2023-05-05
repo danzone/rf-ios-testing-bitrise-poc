@@ -1,5 +1,5 @@
 *** Settings ***
-Library  AppiumLibrary run_on_failure=AppiumLibrary.CapturePageScreenshot
+Library  AppiumLibrary  run_on_failure=Capture Page Screenshot
 Library  BuiltIn
 Library  Process
 

@@ -16,7 +16,7 @@ ${IOS_DEVICE_NAME}            iPhone 8
 
 Start Appium Server
     [Documentation]     Starts Appium server
-    Start Process  appium --default-capabilities '{"appium:showXcodeLog" : true}' --log ${CURDIR}/appium.log
+    Start Process  appium -pa /wd/hub --use-plugins execute-driver --default-capabilities '{"appium:showXcodeLog" : true}' --log ${CURDIR}/appium.log
     ...     shell=True  alias=appiumserver
     ...     stdout=${CURDIR}/appium_stdout.txt  stderr=${CURDIR}/appium_stderr.txt
     Process Should Be Running  appiumserver
